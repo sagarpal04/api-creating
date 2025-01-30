@@ -1,0 +1,33 @@
+{
+  "name": "MILI API",
+  "version": "1.0",
+  "description": "This is a sample API response.",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/users",
+      "response": {
+        "users": [
+          {
+            "id": 1,
+            "name": "Alice"
+          },
+          {
+            "id": 2,
+            "name": "Bob"
+          }
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/users",
+      "request": {
+        "name": "string"
+      },
+      "response": {
+        "message": "User created successfully"
+      }
+    }
+  ]
+}
