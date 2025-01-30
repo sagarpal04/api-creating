@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Hello World" });
 });
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN, // Allow only localhost:5173 to access
+  origin: process.env.CORS_ORIGIN || "*", // Allow only localhost:5173 to access
   credentials: true, // Allow credentials (cookies, HTTP authentication)
 };
 
